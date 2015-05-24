@@ -13,10 +13,10 @@
 - [x] The program must accept input in uppercase or lowercase.
 
 ### Deposit money
-- [ ] For deposits, the program prompts for an amount.
-- [ ] The amount must be greater than zero.
-- [ ] In case of invalid input, the program must give an appropriate error message that tells the customer how to fix it.
-- [ ] If the amount is valid, the program will add the deposit amount to the customer’s balance and display the new balance.
+- [x] For deposits, the program prompts for an amount.
+- [x] The amount must be greater than zero.
+- [x] In case of invalid input, the program must give an appropriate error message that tells the customer how to fix it.
+- [x] If the amount is valid, the program will add the deposit amount to the customer’s balance and display the new balance.
 
 ### Withdraw money
 - [ ] For withdrawals, the program prompts for an amount.
@@ -25,7 +25,7 @@
 - [ ] If the amount is valid, the program will subtract the withdrawal amount from the customer’s balance and display the new balance.
 
 ### Inspect balance
-- [ ] For a balance inspection, the program simply displays the current balance.
+- [x] For a balance inspection, the program simply displays the current balance.
 
 ### Write balance to file
 - [ ] When the customer chooses to quit, the program will write the current balance back to the balance.txt file.

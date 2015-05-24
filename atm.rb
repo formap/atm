@@ -19,6 +19,8 @@ class Atm
         balance_action(balance)
       when 'w'
         #withdraw money
+        balance = withdraw_action(balance)
+        balance_action(balance)
       when 'b'
         #inspect balance
         balance_action(balance)
@@ -55,6 +57,25 @@ class Atm
     end
     balance = balance + amount
     printf "\nYou deposited $%.2f\n", amount
+    return balance
+  end
+
+  def withdraw_action(balance)
+    amount = 0
+    while amount <= 0 do
+      printf "\nHow much money do you want to withdraw? Specify the number in €\n"
+      begin
+        amount = gets.chomp.to_f
+        if amount <= 0
+          printf "\nYou can only withdraw amounts greater than 0.\n"
+        elsif amount > balance
+          printf "\nYou don't have enough money in your account.\n"
+        end
+      rescue
+        printf "\nYou didn't introduce a number. Please introduce a number.\n"
+      end
+    end
+    balance = balance - amount
     return balance
   end
 

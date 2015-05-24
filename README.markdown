@@ -19,10 +19,10 @@
 - [x] If the amount is valid, the program will add the deposit amount to the customer’s balance and display the new balance.
 
 ### Withdraw money
-- [ ] For withdrawals, the program prompts for an amount.
-- [ ] The amount must be greater than zero and less than or equal to the current balance.
-- [ ] In case of invalid input, the program must give an appropriate error message that tells the customer how to fix it.
-- [ ] If the amount is valid, the program will subtract the withdrawal amount from the customer’s balance and display the new balance.
+- [x] For withdrawals, the program prompts for an amount.
+- [x] The amount must be greater than zero and less than or equal to the current balance.
+- [x] In case of invalid input, the program must give an appropriate error message that tells the customer how to fix it.
+- [x] If the amount is valid, the program will subtract the withdrawal amount from the customer’s balance and display the new balance.
 
 ### Inspect balance
 - [x] For a balance inspection, the program simply displays the current balance.

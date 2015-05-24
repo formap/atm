@@ -8,9 +8,9 @@
 - [ ] If the file does not exist, use a starting balance of 100.0, which must be a constant.
 
 ### Prompt the customer for input
-- [ ] The program will then repeatedly prompt the customer to deposit money, withdraw money, inspect balance, or quit, using the letters D, W, B, and Q.
-- [ ] If any other input is given, the program has to remind the customer of the available commands.
-- [ ] The program must accept input in uppercase or lowercase.
+- [x] The program will then repeatedly prompt the customer to deposit money, withdraw money, inspect balance, or quit, using the letters D, W, B, and Q.
+- [x] If any other input is given, the program has to remind the customer of the available commands.
+- [x] The program must accept input in uppercase or lowercase.
 
 ### Deposit money
 - [ ] For deposits, the program prompts for an amount.

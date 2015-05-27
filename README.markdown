@@ -3,9 +3,9 @@
 ## Specifications
 
 ### Read initial balance from file, or use constant
-- [ ] Write a cli script that starts by reading a customer’s bank balance from a file named `balance.txt`.
-- [ ] This file contains a single line with the customer’s starting balance.
-- [ ] If the file does not exist, use a starting balance of 100.0, which must be a constant.
+- [x] Write a cli script that starts by reading a customer’s bank balance from a file named `balance.txt`.
+- [x] This file contains a single line with the customer’s starting balance.
+- [x] If the file does not exist, use a starting balance of 100.0, which must be a constant.
 
 ### Prompt the customer for input
 - [x] The program will then repeatedly prompt the customer to deposit money, withdraw money, inspect balance, or quit, using the letters D, W, B, and Q.
@@ -28,9 +28,9 @@
 - [x] For a balance inspection, the program simply displays the current balance.
 
 ### Write balance to file
-- [ ] When the customer chooses to quit, the program will write the current balance back to the balance.txt file.
-- [ ] If the file does not yet exist, it will be created.
-- [ ] The program will inform about a successful write or give an error message.
+- [x] When the customer chooses to quit, the program will write the current balance back to the balance.txt file.
+- [x] If the file does not yet exist, it will be created.
+- [x] The program will inform about a successful write or give an error message.
 
 
 ## Hints

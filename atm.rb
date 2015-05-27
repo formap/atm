@@ -1,12 +1,19 @@
 class Atm
-  STARTING_BALANCE = 100.0
 
   def initialize(filename = "balance.txt")
     @filename = filename
+    if File.exist?(@filename)
+      @balance = File.read(@filename).to_f
+      # to read the last line of the file
+      #b = `tail -n 1 balance.txt`
+      #@balance = b
+    else
+      @balance = 100.0
+    end
   end
 
   def run
-    balance = STARTING_BALANCE
+    balance = @balance
     printf "Welcome to the Ruby atm. What do you want to do?\n"
     print_menu
     selection = gets.chomp
@@ -31,6 +38,12 @@ class Atm
       selection = gets.chomp
       selection = selection.downcase
     end
+    if !File.exist?(@filename)
+      @filename = File.new(@filename, "w")
+    end
+    @filename.puts(balance)
+    @filename.close
+    printf "\nThe balance was written correctly.\n"
   end
 
   def print_menu
@@ -47,7 +60,7 @@ class Atm
     while amount <= 0 do
       printf "\nHow much money do you want to deposit? Specify the number in €\n"
       begin
-        amount = gets.chomp.to_f
+        amount = gets.to_f
         if amount <= 0
           printf "\nYou can only deposit amount greater than 0.\n"
         end

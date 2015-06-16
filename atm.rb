@@ -55,12 +55,16 @@ class Atm
     printf "\n"
   end
 
+  def read_float_input()
+    return gets.to_f
+  end
+
   def deposit_action(balance)
     amount = 0
     while amount <= 0 do
       printf "\nHow much money do you want to deposit? Specify the number in €\n"
       begin
-        amount = gets.to_f
+        amount = read_float_input()
         if amount <= 0
           printf "\nYou can only deposit amount greater than 0.\n"
         end
